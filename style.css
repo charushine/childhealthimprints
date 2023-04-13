@@ -1,0 +1,168 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+* {
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+* body {
+  margin: 0;
+  overflow-x: hidden;
+}
+* body .navbar {
+  background: rgba(255, 255, 255, 0.5);
+}
+* body .navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+* body .navbar .dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+* body .navbar .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+* body .navbar .dropdown-menu li {
+  color: #fff;
+}
+* body .navbar .dropdown-menu li a,
+* body .navbar .dropdown-menu li .dropdown-item {
+  color: #000;
+}
+* body .navbar .dropdown-menu li a:focus, * body .navbar .dropdown-menu li a:hover,
+* body .navbar .dropdown-menu li .dropdown-item:focus,
+* body .navbar .dropdown-menu li .dropdown-item:hover {
+  color: #000;
+  font-weight: 600;
+  background-color: transparent;
+}
+* body .navbar .nav-link {
+  color: #000 !important;
+}
+* body .navbar .nav-link li a {
+  color: #000;
+}
+* body header {
+  min-height: 90vh;
+}
+* body header .showcase {
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+* body header .showcase h1 {
+  color: #fff;
+  font-size: 3.75rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+* body header .showcase p {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  width: 30rem;
+}
+* body header .video-container {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+* body header .video-container video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* body header .video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+* body .underlineDiv {
+  height: 5px;
+  background: linear-gradient(to right, #0367bf, #eeee22);
+}
+* body section img {
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+* body section .sectionContent .underlineDiv {
+  height: 5px;
+  background: linear-gradient(to right, #0367bf, #eeee22);
+}
+* body section .sectionContent p.contentDescription span {
+  font-weight: bold;
+}
+* body footer {
+  background: #f2f4f8;
+}
+* body footer .text-SecondaryTheme {
+  color: #4abdbf;
+}
+* body footer .text-SecondaryTheme:hover {
+  font-weight: 600;
+  color: #4abdbf;
+}
+* body footer .btn-footerSocialLink {
+  background-color: rgb(32, 117, 190);
+  border-radius: 4px;
+  border-width: 0px;
+  color: #fff;
+}
+* body footer .btn-footerSocialLink:hover {
+  background-color: #fff;
+  color: rgb(32, 117, 190);
+}
+* body .parallax01 {
+  background-image: url("https://keiferx.com/wp-content/uploads/2022/06/scans02-iStock-1295492941-1920x900-BW-transp.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .parallax02 {
+  background-image: url("https://keiferx.com/wp-content/uploads/2022/06/doctor-patient-iStock-1183448049-1920x911-BW2.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  header .showcase h1 {
+    font-size: 2.1rem !important;
+  }
+  header .showcase p {
+    font-size: 0.85rem !important;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,250 @@
+@import "mixins";
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+* {
+  font-family: "Inter";
+  box-sizing: border-box;
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    .navbar {
+//       * body #navbar {
+  background : rgba(255, 255, 255, 0.5);
+// }
+      .dropdown:hover > .dropdown-menu {
+        display: block;
+      }
+      .dropdown > .dropdown-toggle:active {
+        pointer-events: none;
+      }
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.5);
+        li {
+          color: #fff;
+          a,
+          .dropdown-item {
+            color: #000;
+            &:focus,
+            &:hover {
+              color: #000;
+              font-weight: 600;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      .nav-link {
+        color: #000 !important;
+        li {
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+    header {
+      min-height: 90vh;
+      //   position: relative;
+      .showcase {
+        min-height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        // width: 35rem;
+        h1 {
+          color: #fff;
+          font-size: 3.75rem;
+          margin-bottom: 0;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-top: 0;
+          color: #fff;
+          font-weight: 500;
+          line-height: 1.4;
+          font-size: 1.2rem;
+          width: 30rem;
+        }
+        // button {
+        //   margin-top: 1rem;
+        //   background-color: #000;
+        //   color: #fff;
+        //   border: none;
+        //   outline: none;
+        //   padding: 1rem 1.5rem;
+        //   font-size: 0.9rem;
+        //   border-radius: 6px;
+        //   cursor: pointer;
+        // }
+      }
+      .video-container {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+    .underlineDiv {
+      height: 5px;
+      background: linear-gradient(to right, #0367bf, #eeee22);
+    }
+    section {
+      img {
+        max-height: 500px;
+        object-fit: contain;
+      }
+      .sectionContent {
+        .underlineDiv {
+          height: 5px;
+          background: linear-gradient(to right, #0367bf, #eeee22);
+        }
+        p.contentDescription {
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    footer {
+      background: #f2f4f8;
+      // background: #ff624b;
+      .text-SecondaryTheme{
+        color: #4abdbf;
+        &:hover{
+            font-weight: 600;
+            color: #4abdbf;
+        }
+      }
+      .btn-footerSocialLink{
+        background-color: rgb(32, 117, 190);
+        border-radius: 4px;
+        border-width: 0px;
+        color: #fff;
+        // font-size: 20px;
+        &:hover{
+            background-color: #fff;
+            color: rgb(32, 117, 190);
+
+        }
+      }
+    }
+    .parallax01 {
+      background-image: url("https://keiferx.com/wp-content/uploads/2022/06/scans02-iStock-1295492941-1920x900-BW-transp.png");
+      
+      /* Full height */
+      height: 100%; 
+
+      /* Create the parallax scrolling effect */
+      @include parallax;
+    }
+    .parallax02 {
+      background-image: url("https://keiferx.com/wp-content/uploads/2022/06/doctor-patient-iStock-1183448049-1920x911-BW2.jpg");
+
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      @include parallax;
+    }
+  }
+}
+
+// @media(max-width: 850px){
+//     header{
+//         .container{
+//             .navbar{
+//                 .nav-link{
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0;
+//                     background-color: #fff;
+//                     height: 100%;
+//                     width: 225px;
+//                     margin: 0;
+//                     padding: 0;
+//                     flex-direction: column;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     transform: translateX(-100%);
+//                     transition: 0.4s ease all;
+//                     z-index: 10;
+//                     li{
+//                         a{
+//                             color: #000;
+//                             &::after{
+//                                 background-color: #000;
+//                             }
+//                         }
+//                     }
+//                     button{
+//                         border-color: #000;
+//                         color: #000;
+//                         padding: 0.75rem 1.5rem;
+//                     }
+//                     &.active{
+//                         transform: translateX(0%);
+//                     }
+//                 }
+//                 i{
+//                     display: block;
+//                 }
+//             }
+//             .showcase{
+//                 min-height: 80vh;
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: 100%;
+//                 text-align: center;
+//                 h1{
+//                     font-size: 2.25rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 500px) {
+  header {
+    .showcase {
+      h1 {
+        font-size: 2.1rem !important;
+      }
+      p {
+        font-size: 0.85rem !important;
+      }
+    }
+  }
+}
