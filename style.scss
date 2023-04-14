@@ -8,6 +8,9 @@
   }
 }
 
+$primaryThemeColor: #073b6f;
+
+
 .navbar-expand-lg .navbar-nav .nav-link{
   padding-right: 0.8rem;
   padding-left: 0.8rem;
@@ -20,10 +23,13 @@
   body {
     margin: 0;
     overflow-x: hidden;
+
+    .primaryThemeColor{
+      color: $primaryThemeColor;
+    }
+
     .navbar {
-//       * body #navbar {
-  background : rgba(255, 255, 255, 0.5);
-// }
+      background : rgba(255, 255, 255, 0.5);
       .dropdown:hover > .dropdown-menu {
         display: block;
       }
@@ -81,17 +87,6 @@
           font-size: 1.2rem;
           width: 30rem;
         }
-        // button {
-        //   margin-top: 1rem;
-        //   background-color: #000;
-        //   color: #fff;
-        //   border: none;
-        //   outline: none;
-        //   padding: 1rem 1.5rem;
-        //   font-size: 0.9rem;
-        //   border-radius: 6px;
-        //   cursor: pointer;
-        // }
       }
       .video-container {
         z-index: -1;
@@ -116,6 +111,19 @@
         }
       }
     }
+    .bg-lightGray{
+      background: #f4f4f4;
+    }
+    .aboutHeroParallax{
+      background-image: url('https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg');
+      height: 75vh;
+      @include parallax;
+    }
+    .aboutParallax01{
+      background-image: url("https://keiferx.com/wp-content/uploads/2022/06/doctor-patient-iStock-1183448049-1920x900-dark.jpg");
+      height: 100%;
+      @include parallax;
+    }
     .underlineDiv {
       height: 5px;
       background: linear-gradient(to right, #0367bf, #eeee22);
@@ -130,6 +138,7 @@
           height: 5px;
           background: linear-gradient(to right, #0367bf, #eeee22);
         }
+        
         p.contentDescription {
           span {
             font-weight: bold;
@@ -178,6 +187,20 @@
       @include parallax;
     }
   }
+}
+
+
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #f4f4f4;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
 }
 
 // @media(max-width: 850px){

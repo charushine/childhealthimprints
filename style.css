@@ -20,6 +20,9 @@
   margin: 0;
   overflow-x: hidden;
 }
+* body .primaryThemeColor {
+  color: #073b6f;
+}
 * body .navbar {
   background: rgba(255, 255, 255, 0.5);
 }
@@ -101,6 +104,25 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
 }
+* body .bg-lightGray {
+  background: #f4f4f4;
+}
+* body .aboutHeroParallax {
+  background-image: url("https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .aboutParallax01 {
+  background-image: url("https://keiferx.com/wp-content/uploads/2022/06/doctor-patient-iStock-1183448049-1920x900-dark.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 * body .underlineDiv {
   height: 5px;
   background: linear-gradient(to right, #0367bf, #eeee22);
@@ -156,6 +178,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #f4f4f4;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
 }
 
 @media (max-width: 500px) {
