@@ -10,8 +10,7 @@
 
 $primaryThemeColor: #073b6f;
 
-
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0.8rem;
   padding-left: 0.8rem;
 }
@@ -24,12 +23,12 @@ $primaryThemeColor: #073b6f;
     margin: 0;
     overflow-x: hidden;
 
-    .primaryThemeColor{
+    .primaryThemeColor {
       color: $primaryThemeColor;
     }
 
     .navbar {
-      background : rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.5);
       .dropdown:hover > .dropdown-menu {
         display: block;
       }
@@ -111,15 +110,34 @@ $primaryThemeColor: #073b6f;
         }
       }
     }
-    .bg-lightGray{
+    .bg-lightGray {
       background: #f4f4f4;
     }
-    .aboutHeroParallax{
-      background-image: url('https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg');
+    .pressHeroParallax {
+      background-image: url("https://media.istockphoto.com/id/472821788/photo/rolled-newspaper-with-the-headline-press-release.jpg?s=612x612&w=0&k=20&c=msCxAstU_h45-uLq3tB7Tttfuxfr3Mr8UGN9LbJLAM4=");
+      // background-image: url('https://media.istockphoto.com/id/469182248/photo/newspaper-with-the-headline-press-release.jpg?s=612x612&w=0&k=20&c=k08xLqwU20OLAv60_pguWDXuhXIPUKLW_4qPc7XCNAk=');
+      // background-image: url('https://thumbs.dreamstime.com/b/press-release-written-newspaper-49699477.jpg');
+      // background-image: url('https://www.adsmiths.co.uk/wp-content/uploads/2018/06/cover-press-release.jpg');
       height: 75vh;
       @include parallax;
     }
-    .aboutParallax01{
+    .publicationHeroParallax {
+      background-image: url("https://sail.co.in/sites/default/files/banner/2020-06/Publications.jpg");
+      // background-image: url('https://www.ripublication.com/images/Journal-Banner.jpg');
+      height: 75vh;
+      @include parallax;
+    }
+    .eventsHeroParallax{
+      background-image: url("https://uploads-ssl.webflow.com/5ff4e43997c4ec6aa5d646d1/603d547ed5c5fd6365dabbef_industry%20expert%20roundup%20-%20why%20are%20events%20important.png");
+      height: 75vh;
+      @include parallax;
+    }
+    .aboutHeroParallax {
+      background-image: url("https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg");
+      height: 75vh;
+      @include parallax;
+    }
+    .aboutParallax01 {
       background-image: url("https://keiferx.com/wp-content/uploads/2022/06/doctor-patient-iStock-1183448049-1920x900-dark.jpg");
       height: 100%;
       @include parallax;
@@ -138,7 +156,7 @@ $primaryThemeColor: #073b6f;
           height: 5px;
           background: linear-gradient(to right, #0367bf, #eeee22);
         }
-        
+
         p.contentDescription {
           span {
             font-weight: bold;
@@ -149,31 +167,30 @@ $primaryThemeColor: #073b6f;
     footer {
       background: #f2f4f8;
       // background: #ff624b;
-      .text-SecondaryTheme{
+      .text-SecondaryTheme {
         color: #4abdbf;
-        &:hover{
-            font-weight: 600;
-            color: #4abdbf;
+        &:hover {
+          font-weight: 600;
+          color: #4abdbf;
         }
       }
-      .btn-footerSocialLink{
+      .btn-footerSocialLink {
         background-color: rgb(32, 117, 190);
         border-radius: 4px;
         border-width: 0px;
         color: #fff;
         // font-size: 20px;
-        &:hover{
-            background-color: #fff;
-            color: rgb(32, 117, 190);
-
+        &:hover {
+          background-color: #fff;
+          color: rgb(32, 117, 190);
         }
       }
     }
     .parallax01 {
       background-image: url("https://keiferx.com/wp-content/uploads/2022/06/scans02-iStock-1295492941-1920x900-BW-transp.png");
-      
+
       /* Full height */
-      height: 100%; 
+      height: 100%;
 
       /* Create the parallax scrolling effect */
       @include parallax;
@@ -189,8 +206,6 @@ $primaryThemeColor: #073b6f;
   }
 }
 
-
-
 .accordion-button:not(.collapsed) {
   color: #000;
   background-color: #f4f4f4;
@@ -202,7 +217,9 @@ $primaryThemeColor: #073b6f;
   outline: 0;
   box-shadow: none;
 }
-
+.w-15{
+  width: 15%;
+}
 // @media(max-width: 850px){
 //     header{
 //         .container{

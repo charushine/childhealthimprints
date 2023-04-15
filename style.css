@@ -107,6 +107,30 @@
 * body .bg-lightGray {
   background: #f4f4f4;
 }
+* body .pressHeroParallax {
+  background-image: url("https://media.istockphoto.com/id/472821788/photo/rolled-newspaper-with-the-headline-press-release.jpg?s=612x612&w=0&k=20&c=msCxAstU_h45-uLq3tB7Tttfuxfr3Mr8UGN9LbJLAM4=");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .publicationHeroParallax {
+  background-image: url("https://sail.co.in/sites/default/files/banner/2020-06/Publications.jpg");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .eventsHeroParallax {
+  background-image: url("https://uploads-ssl.webflow.com/5ff4e43997c4ec6aa5d646d1/603d547ed5c5fd6365dabbef_industry%20expert%20roundup%20-%20why%20are%20events%20important.png");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 * body .aboutHeroParallax {
   background-image: url("https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg");
   height: 75vh;
@@ -191,6 +215,10 @@
   border-color: none;
   outline: 0;
   box-shadow: none;
+}
+
+.w-15 {
+  width: 15%;
 }
 
 @media (max-width: 500px) {
