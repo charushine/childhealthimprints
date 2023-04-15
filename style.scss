@@ -40,15 +40,18 @@ $secondaryThemeColor: #ff624b;
         pointer-events: none;
       }
       .dropdown-menu {
-        background-color: rgba(255, 255, 255, 0.5);
+        // background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255);
         li {
           color: #fff;
           a,
           .dropdown-item {
-            color: #000;
+            // color: #000;
+            color: $primaryThemeColor;
             &:focus,
             &:hover {
-              color: #000;
+              // color: #000;
+              color: $secondaryThemeColor;
               font-weight: 600;
               background-color: transparent;
             }
@@ -56,12 +59,17 @@ $secondaryThemeColor: #ff624b;
         }
       }
       .nav-link {
-        color: #000 !important;
+        // color: #000 !important;
+        color: $primaryThemeColor;
         li {
           a {
-            color: #000;
+            // color: #000;
+            color: $primaryThemeColor;
           }
         }
+      }
+      .nav-link:hover{
+        color: $secondaryThemeColor;
       }
     }
     header {
@@ -98,7 +106,7 @@ $secondaryThemeColor: #ff624b;
         left: 0;
         height: 100vh;
         width: 100vw;
-        video {
+        .landingPageHeroBgVideo {
           height: 100%;
           width: 100%;
           object-fit: cover;
@@ -201,21 +209,21 @@ $secondaryThemeColor: #ff624b;
       background: #f2f4f8;
       // background: #ff624b;
       .text-SecondaryTheme {
-        color: #4abdbf;
+        color: $secondaryThemeColor;
         &:hover {
           font-weight: 600;
-          color: #4abdbf;
+          color: $secondaryThemeColor;
         }
       }
       .btn-footerSocialLink {
-        background-color: rgb(32, 117, 190);
+        background-color: $primaryThemeColor;
         border-radius: 4px;
         border-width: 0px;
         color: #fff;
         // font-size: 20px;
         &:hover {
-          background-color: #fff;
-          color: rgb(32, 117, 190);
+          background-color: $secondaryThemeColor;
+          color: #fff;
         }
       }
     }
@@ -279,7 +287,6 @@ $secondaryThemeColor: #ff624b;
   color: #fff;
 }
 
-
 .accordion-button:not(.collapsed) {
   color: #000;
   background-color: #f4f4f4;
@@ -296,7 +303,7 @@ $secondaryThemeColor: #ff624b;
 }
 
 
-video{
+.testimonialVideo{
   max-height: 50vh;
 }
 

@@ -36,27 +36,30 @@
   pointer-events: none;
 }
 * body .navbar .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
 }
 * body .navbar .dropdown-menu li {
   color: #fff;
 }
 * body .navbar .dropdown-menu li a,
 * body .navbar .dropdown-menu li .dropdown-item {
-  color: #000;
+  color: #073b6f;
 }
 * body .navbar .dropdown-menu li a:focus, * body .navbar .dropdown-menu li a:hover,
 * body .navbar .dropdown-menu li .dropdown-item:focus,
 * body .navbar .dropdown-menu li .dropdown-item:hover {
-  color: #000;
+  color: #ff624b;
   font-weight: 600;
   background-color: transparent;
 }
 * body .navbar .nav-link {
-  color: #000 !important;
+  color: #073b6f;
 }
 * body .navbar .nav-link li a {
-  color: #000;
+  color: #073b6f;
+}
+* body .navbar .nav-link:hover {
+  color: #ff624b;
 }
 * body header {
   min-height: 90vh;
@@ -92,7 +95,7 @@
   height: 100vh;
   width: 100vw;
 }
-* body header .video-container video {
+* body header .video-container .landingPageHeroBgVideo {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -206,21 +209,21 @@
   background: #f2f4f8;
 }
 * body footer .text-SecondaryTheme {
-  color: #4abdbf;
+  color: #ff624b;
 }
 * body footer .text-SecondaryTheme:hover {
   font-weight: 600;
-  color: #4abdbf;
+  color: #ff624b;
 }
 * body footer .btn-footerSocialLink {
-  background-color: rgb(32, 117, 190);
+  background-color: #073b6f;
   border-radius: 4px;
   border-width: 0px;
   color: #fff;
 }
 * body footer .btn-footerSocialLink:hover {
-  background-color: #fff;
-  color: rgb(32, 117, 190);
+  background-color: #ff624b;
+  color: #fff;
 }
 * body .parallax01 {
   background-image: url("https://keiferx.com/wp-content/uploads/2022/06/scans02-iStock-1295492941-1920x900-BW-transp.png");
@@ -300,7 +303,7 @@
   width: 15%;
 }
 
-video {
+.testimonialVideo {
   max-height: 50vh;
 }
 
