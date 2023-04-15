@@ -19,7 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/6.0.3/mediaelement.min.js" integrity="sha512-AhAXsap4ifuxnxbf5tcwE7M2hTjpQ0SA3plzg5oYaTuZ51OWCuLimANBtfGmJg+DFVZV9jmB1mO3oOa8C/+lzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="style.css">
-    <title>CHIL | Testimonial</title>
+    <title>CHIL | NEO</title>
 </head>
 
 <body>
@@ -35,7 +35,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <img class="w-100" src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/hamburger-menu-icon.png" alt="hamburger-menu-icon">
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -55,8 +57,6 @@
                             <li><a class="dropdown-item" href="#">EMR INTEGRATION</a></li>
                             <li><a class="dropdown-item" href="#">INICU</a></li>
                             <li><a class="dropdown-item" href="#">INICU INTELLIGENCE</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -78,7 +78,7 @@
                         <a class="nav-link" href="publication.html">Publication</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contactUs.html">Contact</a>
                     </li>
                 </ul>
                 <!-- <form class="d-flex">
@@ -181,6 +181,34 @@
         </div>
     </section>
 
+    <div class="productCommonParallax">
+        <section class="container my-md-5">
+            <div class="sectionContent py-5">
+                <div class="questionAnsweredDiv" id="what1Div">
+                    <div class="text-center fw-bold heading fs-1 secondaryThemeColor">What?</div>
+                    <p class="contentDescription fs-5">NICUs are equipped with multiple bedside monitoring devices that are connected to the premature neonate and acquire a few gigabytes of data every day. The continuous data from these devices are manually documented every hour, which leads to errors and loss of a large amount of high-resolution data. The intermittent documentation of physiological data also makes it difficult for clinicians to visualize and detect trends of diagnostic utility.</p>
+                    <p class="contentDescription fs-5">The last few decades have seen rapid growth of digital devices resulting in availability of real-time data points through various interfaces, which enables collation of digitized records using standard protocols like HL7 (Health Level 7) or ASTM (American Society for Testing Material). Since central monitoring services provided by device vendors adhere to their own specific modality, require extra licensing and hardware costs, there is a need for a unified vendor solution.</p>
+                    <p class="contentDescription fs-5">Such a solution should provide real-time data access of vendor specific devices and must adhere to international standards such as HL7. Hence, there is a need for a portable bedside data aggregator that consolidates real-time data from various bedside monitoring devices while storing and transferring all the data to EMR.</p>
+                </div>
+                <div class="questionAnsweredDiv" id="why1Div" style="display: none;">
+                    <div class="text-center fw-bold heading fs-1 secondaryThemeColor">Why?</div>
+                    <p class="contentDescription fs-5">The solution is an IoT based NEO device which automatically captures real-time data from multiple bedside medical devices and live camera feeds. This real-time data is then parsed and pushed to the server using the Internet via WiFi.</p>
+                    <p class="contentDescription fs-5">NEO fetches the data through various interfaces enabling healthcare professionals to get remote access of the neonate which enhances and improves clinical care outcomes.</p>
+                </div>
+                <div class="questionAnsweredDiv" id="how1Div" style="display: none;">
+                    <div class="text-center fw-bold heading fs-1 secondaryThemeColor">How?</div>
+                    <p class="fs-5">NEO device fetches real-time data consisting of millions of data-points from various devices irrespective of the vendor and stores them into a time-series representation.</p>
+                    <p class="fs-5">It then sends this data to a cloud-based data receiver over a WiFi network where it is processed suitably to create a summarized visualization. This gives a quick overview of the health of the neonate to create a clinical decision support system referred as Integrated-NICU or iNICU.</p>
+                    <p class="fs-5">NEO can be integrated with Pulse Oximeters, Monitors, Blood Gas Machines, Ventilators, Incubators and Warmers from various brands. New medical devices are integrated regularly to ensure complete coverage for the clients.</p>
+                </div>
+                <div class="text-center">
+                    <button class="btn basicPrimaryBtn dynamicData basicSecondaryBtn" id="what1">What?</button>
+                    <button class="btn basicPrimaryBtn dynamicData" id="why1">Why?</button>
+                    <button class="btn basicPrimaryBtn dynamicData" id="how1">How?</button>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -226,7 +254,7 @@
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <!-- <label for="footerSearch" class="visually-hidden">SEARCH OUR SITE</label> -->
                             <input id="footerSearch" type="text" class="form-control" placeholder="SEARCH OUR SITE">
-                            <button class="btn btn-primary" type="button">Search</button>
+                            <button class="btn primaryBtn" type="button">Search</button>
                         </div>
                     </form>
                     <h5 class="text-dark text-uppercase mt-4">Follow Us</h5>
