@@ -23,6 +23,9 @@
 * body .primaryThemeColor {
   color: #073b6f;
 }
+* body .secondaryThemeColor {
+  color: #ff624b;
+}
 * body .navbar {
   background: rgba(255, 255, 255, 0.5);
 }
@@ -131,6 +134,38 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+* body .contactUsHeroParallax {
+  background-image: url("https://www.anandgroupindia.com/wp-content/uploads/2019/05/contactus.jpg");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .testimonialHeroParallax {
+  background-image: url("https://telecomfit.com/wp-content/uploads/2019/02/Happy-Clients.jpg");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .productCommonParallax {
+  background-image: url("https://www.shutterstock.com/image-vector/what-how-why-template-design-260nw-2055932024.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .product-NEO-HeroParallax {
+  background-image: url("https://www.childhealthimprints.com/wp-content/uploads/2020/05/imgpsh_fullsize_anim.png");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 * body .aboutHeroParallax {
   background-image: url("https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg");
   height: 75vh;
@@ -155,6 +190,10 @@
   max-height: 500px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+* body section .keyPoints .imgDiv {
+  border-radius: 50%;
+  padding: 5px;
 }
 * body section .sectionContent .underlineDiv {
   height: 5px;
@@ -204,6 +243,46 @@
   background-size: cover;
 }
 
+.primaryBtn {
+  border: 1px solid #073b6f;
+  color: #fff;
+  background: #073b6f;
+}
+
+.primaryBtn:hover {
+  border: 1px solid #ff624b;
+  color: #fff;
+  background: #ff624b;
+}
+
+.secondaryBtn {
+  border: 1px solid #ff624b;
+  color: #fff;
+  background: #ff624b;
+}
+
+.secondaryBtn:hover {
+  border: 1px solid #073b6f;
+  color: #fff;
+  background: #073b6f;
+}
+
+.basicPrimaryBtn {
+  border: 1px solid #073b6f;
+  color: #fff;
+  background: #073b6f;
+}
+
+.basicSecondaryBtn {
+  border: 1px solid #ff624b;
+  color: #fff;
+  background: #ff624b;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
 .accordion-button:not(.collapsed) {
   color: #000;
   background-color: #f4f4f4;
@@ -219,6 +298,10 @@
 
 .w-15 {
   width: 15%;
+}
+
+video {
+  max-height: 50vh;
 }
 
 @media (max-width: 500px) {

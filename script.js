@@ -12,4 +12,12 @@ $(document).ready(function () {
       }
     })
   })
+
+  $(".dynamicData").click(function(){
+    let btnId = this.id;
+    $(".questionAnsweredDiv").hide();
+    $("#"+btnId+"Div").show();
+    $(".dynamicData").removeClass('basicSecondaryBtn');
+    $("#"+btnId).addClass('basicSecondaryBtn');
+  });
   

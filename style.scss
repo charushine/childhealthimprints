@@ -9,6 +9,7 @@
 }
 
 $primaryThemeColor: #073b6f;
+$secondaryThemeColor: #ff624b;
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0.8rem;
@@ -25,6 +26,9 @@ $primaryThemeColor: #073b6f;
 
     .primaryThemeColor {
       color: $primaryThemeColor;
+    }
+    .secondaryThemeColor{
+      color: $secondaryThemeColor;
     }
 
     .navbar {
@@ -132,6 +136,28 @@ $primaryThemeColor: #073b6f;
       height: 75vh;
       @include parallax;
     }
+    .contactUsHeroParallax{
+      background-image: url("https://www.anandgroupindia.com/wp-content/uploads/2019/05/contactus.jpg");
+      // background-image: url("https://st2.depositphotos.com/1265075/7446/i/600/depositphotos_74468913-stock-photo-contact-us-icons-on-cubes.jpg");
+      height: 75vh;
+      @include parallax;
+    }
+    .testimonialHeroParallax{
+      background-image: url("https://telecomfit.com/wp-content/uploads/2019/02/Happy-Clients.jpg");
+      // background-image: url("https://mikekim.com/wp-content/uploads/2015/01/testimonials-1024x683.jpg");
+      height: 75vh;
+      @include parallax;
+    }
+    .productCommonParallax{
+      background-image: url("https://www.shutterstock.com/image-vector/what-how-why-template-design-260nw-2055932024.jpg");
+      height: 100%;
+      @include parallax;
+    }
+    .product-NEO-HeroParallax{
+      background-image: url("https://www.childhealthimprints.com/wp-content/uploads/2020/05/imgpsh_fullsize_anim.png");
+      height: 75vh;
+      @include parallax;
+    }
     .aboutHeroParallax {
       background-image: url("https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg");
       height: 75vh;
@@ -151,6 +177,12 @@ $primaryThemeColor: #073b6f;
         max-height: 500px;
         object-fit: contain;
       }
+      .keyPoints{
+        .imgDiv{
+          border-radius: 50%;
+          padding: 5px;
+        }
+      }
       .sectionContent {
         .underlineDiv {
           height: 5px;
@@ -163,6 +195,7 @@ $primaryThemeColor: #073b6f;
           }
         }
       }
+
     }
     footer {
       background: #f2f4f8;
@@ -206,6 +239,47 @@ $primaryThemeColor: #073b6f;
   }
 }
 
+
+.primaryBtn{
+  border: 1px solid $primaryThemeColor;
+  color: #fff;
+  background: $primaryThemeColor;
+}
+
+.primaryBtn:hover{
+  border: 1px solid $secondaryThemeColor;
+  color: #fff;
+  background: $secondaryThemeColor;
+}
+
+.secondaryBtn{
+  border: 1px solid $secondaryThemeColor;
+  color: #fff;
+  background: $secondaryThemeColor;
+}
+
+.secondaryBtn:hover{
+  border: 1px solid $primaryThemeColor;
+  color: #fff;
+  background: $primaryThemeColor;
+}
+
+.basicPrimaryBtn{
+  border: 1px solid $primaryThemeColor;
+  color: #fff;
+  background: $primaryThemeColor;
+}
+
+.basicSecondaryBtn{
+  border: 1px solid $secondaryThemeColor;
+  color: #fff;
+  background: $secondaryThemeColor;
+}
+.btn:hover{
+  color: #fff;
+}
+
+
 .accordion-button:not(.collapsed) {
   color: #000;
   background-color: #f4f4f4;
@@ -220,6 +294,12 @@ $primaryThemeColor: #073b6f;
 .w-15{
   width: 15%;
 }
+
+
+video{
+  max-height: 50vh;
+}
+
 // @media(max-width: 850px){
 //     header{
 //         .container{
