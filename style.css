@@ -153,6 +153,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+* body .blogHeroParallax {
+  background-image: url("https://www.impactbnd.com/hubfs/social-suggested-images/5_Blog_Layout_Best_Practices_From_2016-1.jpg");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 * body .productCommonParallax {
   background-image: url("https://www.shutterstock.com/image-vector/what-how-why-template-design-260nw-2055932024.jpg");
   height: 100%;
