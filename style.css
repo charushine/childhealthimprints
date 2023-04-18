@@ -208,7 +208,7 @@
 }
 * body section .sectionContent .underlineDiv {
   height: 5px;
-  background: linear-gradient(to right, #0367bf, #eeee22);
+  background: linear-gradient(to right, #0367bf, #ff6e59);
 }
 * body section .sectionContent p.contentDescription span {
   font-weight: bold;
