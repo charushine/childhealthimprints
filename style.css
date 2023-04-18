@@ -27,7 +27,7 @@
   color: #ff624b;
 }
 * body .navbar {
-  background: rgba(255, 255, 255, 0.5);
+  background: #f2f4f8;
 }
 * body .navbar .dropdown:hover > .dropdown-menu {
   display: block;
@@ -36,10 +36,10 @@
   pointer-events: none;
 }
 * body .navbar .dropdown-menu {
-  background-color: rgb(255, 255, 255);
+  background-color: #f2f4f8;
 }
 * body .navbar .dropdown-menu li {
-  color: #fff;
+  color: #f2f4f8;
 }
 * body .navbar .dropdown-menu li a,
 * body .navbar .dropdown-menu li .dropdown-item {
@@ -195,7 +195,7 @@
 }
 * body .underlineDiv {
   height: 5px;
-  background: linear-gradient(to right, #0367bf, #eeee22);
+  background: linear-gradient(to right, #0367bf, #ff6e59);
 }
 * body section img {
   max-height: 500px;
