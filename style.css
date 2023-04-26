@@ -130,7 +130,7 @@
   background-size: cover;
 }
 * body .eventsHeroParallax {
-  background-image: url("https://uploads-ssl.webflow.com/5ff4e43997c4ec6aa5d646d1/603d547ed5c5fd6365dabbef_industry%20expert%20roundup%20-%20why%20are%20events%20important.png");
+  background-image: url("assets/image/events.jpg");
   height: 75vh;
   background-attachment: fixed;
   background-position: center;
@@ -138,7 +138,7 @@
   background-size: cover;
 }
 * body .contactUsHeroParallax {
-  background-image: url("https://www.anandgroupindia.com/wp-content/uploads/2019/05/contactus.jpg");
+  background-image: url("assets/image/contact-us.jpeg");
   height: 75vh;
   background-attachment: fixed;
   background-position: center;
@@ -162,7 +162,7 @@
   background-size: cover;
 }
 * body .productCommonParallax {
-  background-image: url("https://www.shutterstock.com/image-vector/what-how-why-template-design-260nw-2055932024.jpg");
+  /* background-image: url("https://www.shutterstock.com/image-vector/what-how-why-template-design-260nw-2055932024.jpg"); */
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -178,7 +178,8 @@
   background-size: cover;
 }
 * body .aboutHeroParallax {
-  background-image: url("https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg");
+  background-image: url("assets/image/about-us.jpeg");
+  /* background-image: url("https://keiferx.com/wp-content/uploads/2022/06/chess-men-gray-shirt-1900x900-dark2.jpg"); */
   height: 75vh;
   background-attachment: fixed;
   background-position: center;
