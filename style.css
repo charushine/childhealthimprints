@@ -235,7 +235,7 @@
   color: #fff;
 }
 * body .parallax01 {
-  background-image: url("https://keiferx.com/wp-content/uploads/2022/06/scans02-iStock-1295492941-1920x900-BW-transp.png");
+  background-image: url("assets/image/EMR-Background.png");
   /* Full height */
   height: 100%;
   /* Create the parallax scrolling effect */
@@ -245,7 +245,7 @@
   background-size: cover;
 }
 * body .parallax02 {
-  background-image: url("https://keiferx.com/wp-content/uploads/2022/06/doctor-patient-iStock-1183448049-1920x911-BW2.jpg");
+  background-image: url("assets/image/INICU-Intelligence-Background.png");
   /* Full height */
   height: 100%;
   /* Create the parallax scrolling effect */
